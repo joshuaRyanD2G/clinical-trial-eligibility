@@ -44,7 +44,7 @@ nav{
 }
 
 #backButton img{
-    width: 15%;
+    width: 16%;
 }
 
 #resetButton{
@@ -98,7 +98,7 @@ section{
     border-radius: 40px;
     border: none;
     width: 75%;
-    height: 60px;
+    min-height: 50px;
     box-shadow: 0 3px 3px -5px rgb(255, 198, 42), 0 2px 5px rgb(32, 90, 30);
 }
 
