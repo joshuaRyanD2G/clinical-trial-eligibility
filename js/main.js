@@ -15,7 +15,6 @@ function fetchData(){
     .then(data => data.json())
     .then(data => {
         charts = data.charts;
-        console.log(charts);
     })
 }
 
@@ -23,7 +22,6 @@ function fetchData(){
 function forwardHistory(){
     history.push({array: workingArray, html:document.querySelector("#interactive").innerHTML});
     historyCount++;
-    console.log(historyCount);
 }
 
 //add html to history and decrease history counter
@@ -34,7 +32,6 @@ function backHistory(){
         workingArray = history[historyCount].array;
         document.querySelector("#interactive").innerHTML = history[historyCount].html;    
     }
-    console.log(historyCount);
 }
 
 //load initial selections to page
@@ -122,13 +119,10 @@ document.addEventListener("DOMContentLoaded", function(){
     init();
     document.addEventListener("click", (e) => {
         if(e.target.tagName == "BUTTON"){
-            console.log(e.target.dataset.id, e.target.dataset.type);
             updatePage(e.target.dataset.id, e.target.dataset.type);
         }else if(e.target == document.querySelector("#backButton")){
-            console.log("back button");
             backHistory();
         }else if(e.target == document.querySelector("#resetButton")){
-            console.log("reset button");
             document.location.reload();
         }
     })
