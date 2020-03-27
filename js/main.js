@@ -18,7 +18,7 @@ function fetchData(){
 
 function initialAdd(){
     for(let i = 0; i < charts.length; i++){
-        document.querySelector("main").innerHTML += `<button data-id="${i}">${charts[i].name}</button>`
+        document.querySelector("#interactive").innerHTML += `<button data-id="${i}">${charts[i].name}</button>`
     }
 }
 
