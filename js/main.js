@@ -15,9 +15,19 @@ function fetchData(){
         console.log(charts);
     })
 }
+
+function initialAdd(){
+    for(let i = 0; i < charts.length; i++){
+        document.querySelector("main").innerHTML += `<button data-id="${i}">${charts[i].name}</button>`
+    }
+}
+
 //sequence events
 function init(){
     fetchData();
+    setTimeout(() => {
+        initialAdd();
+    }, 250);
 }
 
 //initialize
