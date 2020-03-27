@@ -2,7 +2,7 @@
 //array to hold previous app state(s) html
 let history = [];
 //counter to check against history, increases with each click
-let historyCount = 0;
+let historyCount = -1;
 //modified array based on what the user interacts with
 let workingArray = [];
 //variable to hold fetched chart data from data.json
@@ -23,16 +23,18 @@ function fetchData(){
 function forwardHistory(){
     history.push({array: workingArray, html:document.querySelector("#interactive").innerHTML});
     historyCount++;
+    console.log(historyCount);
 }
 
 //add html to history and decrease history counter
 function backHistory(){
-    if(historyCount.length > 1){
+    if(history.length > 1){
         history.pop();
         historyCount--;
         workingArray = history[historyCount].array;
         document.querySelector("#interactive").innerHTML = history[historyCount].html;    
     }
+    console.log(historyCount);
 }
 
 //load initial selections to page
@@ -100,6 +102,15 @@ function updatePage(targetID, type){
 
 //sequence events
 function init(){
+    //intro animation    
+    TweenMax.to("#splashLogo", 0.5, {
+        delay: 0.5,
+        opacity: 0
+    });
+    TweenMax.from(["main", "#logo"], 0.5, {
+        delay: 1.2,
+        opacity: 0
+    });
     fetchData();
     setTimeout(() => {
         initialAdd();
@@ -109,36 +120,16 @@ function init(){
 //initialize
 document.addEventListener("DOMContentLoaded", function(){
     init();
-    //intro animation
-    TweenMax.to("#topBox", 1, {
-        delay: 0.5,
-        x:-1366,
-        display: "none"
-    
-    });
-    //bottom box animates to the right
-    TweenMax.to("#bottomBox", 1, {
-        delay: 0.5,
-        x:-1366,
-        display: "none"
-    });
-    
-    TweenMax.to("#splashLogo", 0.2, {
-        delay: 0.5,
-        opacity: 0
-    });
-    TweenMax.from("main", 0.5, {
-        delay: 1.2,
-        opacity: 0
-    });
-
     document.addEventListener("click", (e) => {
         if(e.target.tagName == "BUTTON"){
-            TweenMax.to("#logo", 0.2, {
-                opacity: 0.2
-            });
             console.log(e.target.dataset.id, e.target.dataset.type);
             updatePage(e.target.dataset.id, e.target.dataset.type);
+        }else if(e.target == document.querySelector("#backButton")){
+            console.log("back button");
+            backHistory();
+        }else if(e.target == document.querySelector("#resetButton")){
+            console.log("reset button");
+            document.location.reload();
         }
     })
 });
