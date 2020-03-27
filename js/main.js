@@ -109,8 +109,34 @@ function init(){
 //initialize
 document.addEventListener("DOMContentLoaded", function(){
     init();
+    //intro animation
+    TweenMax.to("#topBox", 1, {
+        delay: 0.5,
+        x:-1366,
+        display: "none"
+    
+    });
+    //bottom box animates to the right
+    TweenMax.to("#bottomBox", 1, {
+        delay: 0.5,
+        x:-1366,
+        display: "none"
+    });
+    
+    TweenMax.to("#splashLogo", 0.2, {
+        delay: 0.5,
+        opacity: 0
+    });
+    TweenMax.from("main", 0.5, {
+        delay: 1.2,
+        opacity: 0
+    });
+
     document.addEventListener("click", (e) => {
         if(e.target.tagName == "BUTTON"){
+            TweenMax.to("#logo", 0.2, {
+                opacity: 0.2
+            });
             console.log(e.target.dataset.id, e.target.dataset.type);
             updatePage(e.target.dataset.id, e.target.dataset.type);
         }

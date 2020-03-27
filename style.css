@@ -59,3 +59,34 @@ section{
     height: 60px;
     box-shadow: 0 3px 3px -5px rgb(255, 198, 42), 0 2px 5px rgb(32, 90, 30);
 }
+
+#logo{
+    width: 160px;
+    position: absolute;
+    left: 3%;
+    top: 3%;
+}
+
+#twoBoxes{
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 1;
+}
+
+#topBox{
+    fill: #c7c8ca;
+}
+
+#bottomBox{
+    fill: #c7c8ca;
+}
+
+#splashLogo{
+    position: absolute;
+	top: 50%;
+	left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    z-index: 2;
+}
