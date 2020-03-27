@@ -78,7 +78,15 @@ function updatePage(targetID, type){
             workingArray[i].branch != "trial" ?
             document.querySelector("#interactive").innerHTML += `<button data-id="${i}" data-type="branch">${workingArray[i].branch}</button>`
             :
-            document.querySelector("#interactive").innerHTML += `add trial info here`;
+            document.querySelector("#interactive").innerHTML += `
+                <div class="trialInfo">
+                
+                    <p class="trialName">Trial: ${workingArray[i].trial}</p>
+                    <p class="trialRN">RN: ${workingArray[i].rn}</p>
+                    <p class="trialRecruitment">Recruitment: ${workingArray[i].recruitment}</p>
+                
+                </div>
+            `;
         }    
     }else{
         console.error("Load error");
