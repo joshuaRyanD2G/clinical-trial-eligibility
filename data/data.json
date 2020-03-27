@@ -1,0 +1,179 @@
+{
+    "charts": [
+        {"name": "Breast Cancer", "chart": [
+            {"node": "Neoadjuvant", "tree": [
+                {"branch": "HER2+", "subBranches": [
+                    {"branch": "trial", "trial": "ROCHE WO40324/Federica", "RN": "Ann", "recruitment": false}
+                ]},
+                {"branch": "HER2-", "subBranches": [
+                ]}
+            ]},
+            {"node": "Adjuvant", "tree": [
+                {"branch": "HER2+", "subBranches": [
+                ]},
+                {"branch": "HER2-", "subBranches": [
+                    {"branch": "Hormone Receptor Positive", "subBranches": [
+                        {"branch": "Early Breast Cancer", "subBranches": [
+                            {"branch": "trial", "trial": "Novartis CLEE011012301C NATALEE/TRIO033", "RN": "Shannon", "recruitment": true}
+                        ]}
+                    ]} 
+                ]}
+            ]},
+            {"node": "Metastatic", "tree": [
+                {"branch": "Triple Negative or HER2+", "subBranches": [
+                ]}
+            ]},
+            {"node": "Second Line", "tree": [
+            ]},
+            {"node": "Other", "tree": [
+                {"branch": "High Risk for Chemo Induced Nausea and Vomiting", "subBranches": [
+                    {"branch": "trial", "trial": "OHRI The ILIAD study", "RN": "Virginia", "recruitment": false}
+                ]}
+            ]},
+            {"node": "Basket Study", "tree": [
+                {"branch": "Adjuvant, First, Second, Third Line", "subBranches": [
+                    {"branch": "Over 70", "subBranches": [
+                        {"branch": "trial", "trial": "The 5C Study", "RN": "Tammy", "recruitment": true}
+                    ]}
+                ]}
+            ]}
+        ]},
+        {"name": "Genito-Urinary", "chart":[
+            {"node": "Renal Cell Carcinoma", "tree": [
+                {"branch": "Adjuvant", "subBranches": [
+                    {"branch": "Post Nephrectomy", "subBranches": [
+                        {"branch": "trial", "trial": "MERCK MK3475-564 / KEYNOTE-564", "RN": "Tammy", "recruitment": false}
+                    ]},
+                    {"branch": "Localized", "subBranches": [
+                        {"branch": "High Risk of Relapse post partial/radical nephrectomy", "subBranches": [
+                            {"branch": "trial", "trial": "BMS CA209-914", "RN": "Divina", "recruitment": true}
+                        ]}
+                    ]}
+                ]},
+                {"branch": "Line 1-2-3", "subBranches": [
+                    {"branch": "Advanced Renal Cell Carcinoma", "subBranches": [
+                        {"branch": "trial", "trial": "BMS CA018005 / FRACTION-RCC", "RN": "Lynn", "recruitment": true}
+                    ]}
+                ]}
+            ]},
+            {"node": "Prostate", "tree": [
+                {"branch": "Adjuvant", "subBranches": [
+                ]},
+                {"branch": "Metastatic", "subBranches": [
+                    {"branch": "Hormone Sensitive", "subBranches": [
+                        {"branch": "First Line", "subBranches": [
+                        ]},
+                        {"branch": "Second Line", "subBranches": [
+                        ]},
+                        {"branch": "Third Line", "subBranches": [
+                        ]}
+                    ]},
+                    {"branch": "Castrate Resistant", "subBranches": [
+                        {"branch": "First Line", "subBranches": [
+                            {"branch": "Chemotherapy Naïve; progressed on NG Hormonal Agent", "subBranches": [
+                                {"branch": "trial", "trial": "Merck MK3475-641 / KEYNOTE 641", "RN": "Lynn", "recruitment": true}
+                            ]},
+                            {"branch": "trial", "trial": "Merck MK3475-921 / KEYNOTE 921", "RN": "Lynn", "recruitment": true}
+                        ]},
+                        {"branch": "Second Line", "subBranches": [
+                            {"branch": "Associated Homologous Recombination Deficiency", "subBranches": [
+                                {"branch": "trial", "trial": "(Clovis) TRITON 3/CO-338-063", "RN": "Sam", "recruitment": true}
+                            ]}
+                        ]},
+                        {"branch": "Third Line", "subBranches": [
+                            {"branch": "Associated Homologous Recombination Deficiency", "subBranches": [
+                                {"branch": "trial", "trial": "(Clovis) TRITON 3/CO-338-063", "RN": "Sam", "recruitment": true}
+                            ]}
+                        ]}
+                    ]}
+                ]}
+            ]},
+            {"node": "Bladder Cancer", "tree": [
+                {"branch": "Cisplatineligible, MuscleInvasive", "subBranches": [
+                    {"branch": "Neoadjuvant", "subBranches": [
+                    ]}
+                ]},
+                {"branch": "Locally Advanced or Mets Urothelial", "subBranches": [
+                    {"branch": "First Line", "subBranches": [
+                        {"branch": "trial", "trial": "(Merck) MK-7902-011", "RN": "Divina", "recruitment": true}
+                    ]},
+                    {"branch": "Third Line", "subBranches": [
+                        {"branch": "trial", "trial": "(ASTELLAS) 7465-CL-0301", "RN": "Marianna", "recruitment": true}
+                    ]}
+                ]}
+            ]},
+            {"node":"Basket Study", "tree": [
+                {"branch": "Adjuvant, First, Second, Third Line", "subBranches": [
+                    {"branch": "Over 70", "subBranches": [
+                        {"branch": "trial", "trial": "The 5C Study", "RN": "Tammy", "recruitment": true}
+                    ]}
+                ]}
+            ]}
+        ]},
+        {"name": "Cutaneous Oncology", "chart": [
+            {"node": "Melanoma", "tree": [
+                {"branch": "Resectable", "subBranches": [
+                    {"branch": "First Line", "subBranches": [
+                    ]},
+                    {"branch": "Second Line", "subBranches": [
+                    ]},
+                    {"branch": "Third Line", "subBranches": [
+                    ]}
+                ]},
+                {"branch": "Unresectable", "subBranches": [
+                    {"branch": "First Line", "subBranches": [
+                    ]},
+                    {"branch": "Second Line", "subBranches": [
+                    ]},
+                    {"branch": "Third Line", "subBranches": [
+                    ]},
+                    {"branch": "Metastatic", "subBranches": [
+                        {"branch": "trial", "trial": "(CCTG) ME:13/STOP-GAP RN: Divina", "RN": "Divina", "recruitment": true}
+                    ]}
+                ]}
+            ]},
+            {"node":"Basket Study", "tree": [
+                {"branch": "Adjuvant, First, Second, Third Line", "subBranches": [
+                    {"branch": "Over 70", "subBranches": [
+                        {"branch": "trial", "trial": "The 5C Study", "RN": "Tammy", "recruitment": true}
+                    ]}
+                ]}
+            ]}
+        ]},
+        {"name": "Lung Cancer", "chart": [
+            {"node": "Small Cell (SCLC)", "tree": [
+                {"branch": "Limited", "subBranches": [
+                ]},
+                {"branch": "Extensive", "subBranches": [
+                    {"branch": "Maintenance", "subBranches": [
+                        {"branch": "trial", "trial": "(ABBVIE) M16-298 / MERU)", "RN": "Marianna", "recruitment": false}
+                    ]}
+                ]}
+            ]},
+            {"node": "Non-small Cell (NSLSC)", "tree": [
+                {"branch": "Resectable", "subBranches": [
+                    {"branch": "Adjuvant Therapy", "subBranches": [
+                        {"branch": "trial", "trial": "(CCTG) BR.31", "RN":"Marianna", "recruitment": true}
+                    ]}
+                ]},
+                {"branch": "Unresctable", "subBranches": [
+                    {"branch": "First Line", "subBranches": [
+                        {"branch": "trial", "trial": "(ROCHE) BO29554/BFAST", "RN": "Sam", "recruitment": true}
+                    ]},
+                    {"branch": "Second Line", "subBranches": [
+                        {"branch": "trial", "trial": "BMS CA209-907", "RN": "not assigned", "recruitment": false}
+                    ]},
+                    {"branch": "Third Line", "subBranches": [
+                    ]}
+                ]}
+            ]},
+            {"node":"Basket Study", "tree": [
+                {"branch": "Adjuvant, First, Second, Third Line", "subBranches": [
+                    {"branch": "Over 70", "subBranches": [
+                        {"branch": "trial", "trial": "The 5C Study", "RN": "Tammy", "recruitment": true}
+                    ]}
+                ]}
+            ]}
+        ]}
+    ]
+}
