@@ -1,13 +1,14 @@
-//global variables
-
+/****** global variables ******/
 //array to hold previous app state(s) html
 let history = [];
 //counter to check against history, increases with each click
 let historyCount = 0;
-
+//modified array based on what the user interacts with
+let workingArray = [];
 //variable to hold fetched chart data from data.json
 let charts;
 
+/****** global functions ******/
 //fetch the data
 function fetchData(){
     fetch('./data/data.json')
@@ -20,7 +21,7 @@ function fetchData(){
 
 //add html to history and increase history counter
 function forwardHistory(){
-    history.push(document.querySelector("#interactive").innerHTML);
+    history.push({array: workingArray, html:document.querySelector("#interactive").innerHTML});
     historyCount++;
 }
 
@@ -29,14 +30,62 @@ function backHistory(){
     if(historyCount.length > 1){
         history.pop();
         historyCount--;
-        document.querySelector("#interactive").innerHTML = history[historyCount];    
+        workingArray = history[historyCount].array;
+        document.querySelector("#interactive").innerHTML = history[historyCount].html;    
     }
 }
 
 //load initial selections to page
 function initialAdd(){
     for(let i = 0; i < charts.length; i++){
-        document.querySelector("#interactive").innerHTML += `<button data-id="${i}">${charts[i].name}</button>`
+        document.querySelector("#interactive").innerHTML += `<button data-id="${i}" data-type="chart">${charts[i].name}</button>`
+    }
+    workingArray = charts;
+    forwardHistory();
+}
+
+//update page contents and working array based on what is clicked
+function updatePage(targetID, type){
+    //the target object
+    let selected = workingArray[targetID];
+    if(type == "chart"){
+        //update working array with selection
+        workingArray = selected.chart;
+        //clear content
+        document.querySelector("#interactive").innerHTML = ``;
+        //update page contents
+        for(let i = 0; i < workingArray.length; i++){
+            document.querySelector("#interactive").innerHTML += `<button data-id="${i}" data-type="node">${workingArray[i].node}</button>`
+        }            
+    }
+    else if(type == "node"){
+        //update working array with selection
+        workingArray = selected.tree;
+        //clear content
+        document.querySelector("#interactive").innerHTML = ``;
+        //update page contents
+        for(let i = 0; i < workingArray.length; i++){
+            document.querySelector("#interactive").innerHTML += `<button data-id="${i}" data-type="branch">${workingArray[i].branch}</button>`
+        }    
+    }else if(type == "branch"){
+        //update working array with selection
+        workingArray = selected.subBranches;
+        //clear content
+        document.querySelector("#interactive").innerHTML = ``;
+        //update page contents
+        for(let i = 0; i < workingArray.length; i++){
+            //if the branch is is not a trial
+            workingArray[i].branch != "trial" ?
+            document.querySelector("#interactive").innerHTML += `<button data-id="${i}" data-type="branch">${workingArray[i].branch}</button>`
+            :
+            document.querySelector("#interactive").innerHTML += `add trial info here`;
+        }    
+    }else{
+        console.error("Load error");
+    }
+    //if there are no page contents
+    if(document.querySelector("#interactive").innerHTML == ``){
+        document.querySelector("#interactive").innerHTML += `no available trials at this time`;
     }
     forwardHistory();
 }
@@ -52,4 +101,10 @@ function init(){
 //initialize
 document.addEventListener("DOMContentLoaded", function(){
     init();
+    document.addEventListener("click", (e) => {
+        if(e.target.tagName == "BUTTON"){
+            console.log(e.target.dataset.id, e.target.dataset.type);
+            updatePage(e.target.dataset.id, e.target.dataset.type);
+        }
+    })
 });

@@ -3,7 +3,9 @@
         {"name": "Breast Cancer", "chart": [
             {"node": "Neoadjuvant", "tree": [
                 {"branch": "HER2+", "subBranches": [
-                    {"branch": "trial", "trial": "ROCHE WO40324/Federica", "RN": "Ann", "recruitment": false}
+                    {"branch": "Early Breast Cancer", "subBranches": [
+                        {"branch": "trial", "trial": "ROCHE WO40324/Federica", "RN": "Ann", "recruitment": false}
+                    ]}
                 ]},
                 {"branch": "HER2-", "subBranches": [
                 ]}
