@@ -77,22 +77,20 @@ function updatePage(targetID, type){
             workingArray[i].branch != "trial" ?
             document.querySelector("#interactive").innerHTML += `<button data-id="${i}" data-type="branch">${workingArray[i].branch}</button>`
             :
-            document.querySelector("#interactive").innerHTML += `
-                <div class="trialInfo">
-                
-                    <p class="trialName">Trial: ${workingArray[i].trial}</p>
+            document.querySelector("#interactive").innerHTML += 
+                `<div class="trialInfo">
+                    <h3>Trial Information</h3>
+                    <p class="trialName">${workingArray[i].trial}</p>
                     <p class="trialRN">RN: ${workingArray[i].rn}</p>
                     <p class="trialRecruitment">Recruitment: ${workingArray[i].recruitment}</p>
-                
-                </div>
-            `;
+                 </div>`;
         }    
     }else{
         console.error("Load error");
     }
     //if there are no page contents
     if(document.querySelector("#interactive").innerHTML == ``){
-        document.querySelector("#interactive").innerHTML += `no available trials at this time`;
+        document.querySelector("#interactive").innerHTML += `<p>no available trials at this time</p>`;
     }
     forwardHistory();
 }

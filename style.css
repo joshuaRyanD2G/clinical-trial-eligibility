@@ -71,9 +71,8 @@ section{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 85%;
     overflow: scroll;
-    margin-top: 25px;
+    margin-top: 10px;
 }
 
 #interactive {
@@ -82,6 +81,7 @@ section{
     left:50%;
     transform:translate(-50%,-50%);
     width: 100%;
+    height: 90%;
     z-index: 2;
 }
 
@@ -113,4 +113,28 @@ section{
     transform: translate(-50%, -50%);
     width: 40%;
     z-index: 2;
+}
+
+.trialInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+    width: 90%;
+    height: auto;
+    padding: 15px 15px 0 15px;
+    border: 2px solid black;
+    overflow: scroll;
+    font-size: 20px;
+}
+
+.trialInfo h3{
+    margin-bottom: 15px;
+    text-decoration: underline;  
+}
+
+.trialInfo p{
+    margin-bottom: 15px;
+    display: flex;
 }
