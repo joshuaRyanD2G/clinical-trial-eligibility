@@ -98,7 +98,7 @@ function updatePage(targetID, type){
 //sequence events
 function init(){
     //intro animation    
-    TweenMax.to("#splashLogo", 0.5, {
+    TweenMax.to("#splashLogo", 0.75, {
         delay: 0.5,
         opacity: 0
     });
