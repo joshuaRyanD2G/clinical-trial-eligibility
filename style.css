@@ -119,6 +119,8 @@ section{
     z-index: 2;
 }
 
+/* Trial Card Styles */
+
 .trialInfo{
     display: flex;
     flex-direction: column;
