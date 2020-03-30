@@ -4,7 +4,7 @@
             {"node": "Neoadjuvant", "tree": [
                 {"branch": "HER2+", "subBranches": [
                     {"branch": "Early Breast Cancer", "subBranches": [
-                        {"branch": "trial", "trial": "ROCHE WO40324/Federica", "rn": "Ann", "recruitment": "closed"}
+                        {"branch": "terminal", "trial": "ROCHE WO40324/Federica", "rn": "Ann", "recruitment": "closed"}
                     ]}
                 ]},
                 {"branch": "HER2-", "subBranches": [
@@ -16,7 +16,7 @@
                 {"branch": "HER2-", "subBranches": [
                     {"branch": "Hormone Receptor Positive", "subBranches": [
                         {"branch": "Early Breast Cancer", "subBranches": [
-                            {"branch": "trial", "trial": "Novartis CLEE011012301C NATALEE/TRIO033", "rn": "Shannon", "recruitment": "open"}
+                            {"branch": "terminal", "trial": "Novartis CLEE011012301C NATALEE/TRIO033", "rn": "Shannon", "recruitment": "open"}
                         ]}
                     ]} 
                 ]}
@@ -29,13 +29,13 @@
             ]},
             {"node": "Other", "tree": [
                 {"branch": "High Risk for Chemo Induced Nausea and Vomiting", "subBranches": [
-                    {"branch": "trial", "trial": "OHRI The ILIAD study", "rn": "Virginia", "recruitment": "closed"}
+                    {"branch": "terminal", "trial": "OHRI The ILIAD study", "rn": "Virginia", "recruitment": "closed"}
                 ]}
             ]},
             {"node": "Basket Study", "tree": [
                 {"branch": "Adjuvant, First, Second, Third Line", "subBranches": [
                     {"branch": "Over 70", "subBranches": [
-                        {"branch": "trial", "trial": "The 5C Study", "rn": "Tammy", "recruitment": "open"}
+                        {"branch": "terminal", "trial": "The 5C Study", "rn": "Tammy", "recruitment": "open"}
                     ]}
                 ]}
             ]}
@@ -44,17 +44,17 @@
             {"node": "Renal Cell Carcinoma", "tree": [
                 {"branch": "Adjuvant", "subBranches": [
                     {"branch": "Post Nephrectomy", "subBranches": [
-                        {"branch": "trial", "trial": "MERCK MK3475-564 / KEYNOTE-564", "rn": "Tammy", "recruitment": "closed"}
+                        {"branch": "terminal", "trial": "MERCK MK3475-564 / KEYNOTE-564", "rn": "Tammy", "recruitment": "closed"}
                     ]},
                     {"branch": "Localized", "subBranches": [
                         {"branch": "High Risk of Relapse post partial/radical nephrectomy", "subBranches": [
-                            {"branch": "trial", "trial": "BMS CA209-914", "rn": "Divina", "recruitment": "open"}
+                            {"branch": "terminal", "trial": "BMS CA209-914", "rn": "Divina", "recruitment": "open"}
                         ]}
                     ]}
                 ]},
                 {"branch": "Line 1-2-3", "subBranches": [
                     {"branch": "Advanced Renal Cell Carcinoma", "subBranches": [
-                        {"branch": "trial", "trial": "BMS CA018005 / FRACTION-RCC", "rn": "Lynn", "recruitment": "open"}
+                        {"branch": "terminal", "trial": "BMS CA018005 / FRACTION-RCC", "rn": "Lynn", "recruitment": "open"}
                     ]}
                 ]}
             ]},
@@ -73,18 +73,18 @@
                     {"branch": "Castrate Resistant", "subBranches": [
                         {"branch": "First Line", "subBranches": [
                             {"branch": "Chemotherapy Naïve; progressed on NG Hormonal Agent", "subBranches": [
-                                {"branch": "trial", "trial": "Merck MK3475-641 / KEYNOTE 641", "rn": "Lynn", "recruitment": "open"}
+                                {"branch": "terminal", "trial": "Merck MK3475-641 / KEYNOTE 641", "rn": "Lynn", "recruitment": "open"}
                             ]},
-                            {"branch": "trial", "trial": "Merck MK3475-921 / KEYNOTE 921", "rn": "Lynn", "recruitment": "open"}
+                            {"branch": "terminal", "trial": "Merck MK3475-921 / KEYNOTE 921", "rn": "Lynn", "recruitment": "open"}
                         ]},
                         {"branch": "Second Line", "subBranches": [
                             {"branch": "Associated Homologous Recombination Deficiency", "subBranches": [
-                                {"branch": "trial", "trial": "(Clovis) TRITON 3/CO-338-063", "rn": "Sam", "recruitment": "open"}
+                                {"branch": "terminal", "trial": "(Clovis) TRITON 3/CO-338-063", "rn": "Sam", "recruitment": "open"}
                             ]}
                         ]},
                         {"branch": "Third Line", "subBranches": [
                             {"branch": "Associated Homologous Recombination Deficiency", "subBranches": [
-                                {"branch": "trial", "trial": "(Clovis) TRITON 3/CO-338-063", "rn": "Sam", "recruitment": "open"}
+                                {"branch": "terminal", "trial": "(Clovis) TRITON 3/CO-338-063", "rn": "Sam", "recruitment": "open"}
                             ]}
                         ]}
                     ]}
@@ -97,17 +97,17 @@
                 ]},
                 {"branch": "Locally Advanced or Mets Urothelial", "subBranches": [
                     {"branch": "First Line", "subBranches": [
-                        {"branch": "trial", "trial": "(Merck) MK-7902-011", "rn": "Divina", "recruitment": "open"}
+                        {"branch": "terminal", "trial": "(Merck) MK-7902-011", "rn": "Divina", "recruitment": "open"}
                     ]},
                     {"branch": "Third Line", "subBranches": [
-                        {"branch": "trial", "trial": "(ASTELLAS) 7465-CL-0301", "rn": "Marianna", "recruitment": "open"}
+                        {"branch": "terminal", "trial": "(ASTELLAS) 7465-CL-0301", "rn": "Marianna", "recruitment": "open"}
                     ]}
                 ]}
             ]},
             {"node":"Basket Study", "tree": [
                 {"branch": "Adjuvant, First, Second, Third Line", "subBranches": [
                     {"branch": "Over 70", "subBranches": [
-                        {"branch": "trial", "trial": "The 5C Study", "rn": "Tammy", "recruitment": "open"}
+                        {"branch": "terminal", "trial": "The 5C Study", "rn": "Tammy", "recruitment": "open"}
                     ]}
                 ]}
             ]}
@@ -130,14 +130,14 @@
                     {"branch": "Third Line", "subBranches": [
                     ]},
                     {"branch": "Metastatic", "subBranches": [
-                        {"branch": "trial", "trial": "(CCTG) ME:13/STOP-GAP", "rn": "Divina", "recruitment": "open"}
+                        {"branch": "terminal", "trial": "(CCTG) ME:13/STOP-GAP", "rn": "Divina", "recruitment": "open"}
                     ]}
                 ]}
             ]},
             {"node":"Basket Study", "tree": [
                 {"branch": "Adjuvant, First, Second, Third Line", "subBranches": [
                     {"branch": "Over 70", "subBranches": [
-                        {"branch": "trial", "trial": "The 5C Study", "rn": "Tammy", "recruitment": "open"}
+                        {"branch": "terminal", "trial": "The 5C Study", "rn": "Tammy", "recruitment": "open"}
                     ]}
                 ]}
             ]}
@@ -148,22 +148,22 @@
                 ]},
                 {"branch": "Extensive", "subBranches": [
                     {"branch": "Maintenance", "subBranches": [
-                        {"branch": "trial", "trial": "(ABBVIE) M16-298 / MERU)", "rn": "Marianna", "recruitment": "closed"}
+                        {"branch": "terminal", "trial": "(ABBVIE) M16-298 / MERU)", "rn": "Marianna", "recruitment": "closed"}
                     ]}
                 ]}
             ]},
             {"node": "Non-small Cell (NSLSC)", "tree": [
                 {"branch": "Resectable", "subBranches": [
                     {"branch": "Adjuvant Therapy", "subBranches": [
-                        {"branch": "trial", "trial": "(CCTG) BR.31", "rn":"Marianna", "recruitment": "open"}
+                        {"branch": "terminal", "trial": "(CCTG) BR.31", "rn":"Marianna", "recruitment": "open"}
                     ]}
                 ]},
                 {"branch": "Unresctable", "subBranches": [
                     {"branch": "First Line", "subBranches": [
-                        {"branch": "trial", "trial": "(ROCHE) BO29554/BFAST", "rn": "Sam", "recruitment": "open"}
+                        {"branch": "terminal", "trial": "(ROCHE) BO29554/BFAST", "rn": "Sam", "recruitment": "open"}
                     ]},
                     {"branch": "Second Line", "subBranches": [
-                        {"branch": "trial", "trial": "BMS CA209-907", "rn": "not assigned", "recruitment": "closed"}
+                        {"branch": "terminal", "trial": "BMS CA209-907", "rn": "not assigned", "recruitment": "closed"}
                     ]},
                     {"branch": "Third Line", "subBranches": [
                     ]}
@@ -172,7 +172,7 @@
             {"node":"Basket Study", "tree": [
                 {"branch": "Adjuvant, First, Second, Third Line", "subBranches": [
                     {"branch": "Over 70", "subBranches": [
-                        {"branch": "trial", "trial": "The 5C Study", "rn": "Tammy", "recruitment": "open"}
+                        {"branch": "terminal", "trial": "The 5C Study", "rn": "Tammy", "recruitment": "open"}
                     ]}
                 ]}
             ]}

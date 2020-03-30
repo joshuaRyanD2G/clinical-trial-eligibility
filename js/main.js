@@ -74,7 +74,7 @@ function updatePage(targetID, type){
         //update page contents
         for(let i = 0; i < workingArray.length; i++){
             //if the branch is is not a trial
-            workingArray[i].branch != "trial" ?
+            workingArray[i].branch != "terminal" ?
             document.querySelector("#interactive").innerHTML += `<button data-id="${i}" data-type="branch">${workingArray[i].branch}</button>`
             :
             document.querySelector("#interactive").innerHTML += 
