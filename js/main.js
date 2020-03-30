@@ -115,6 +115,7 @@ function init(){
 //initialize
 document.addEventListener("DOMContentLoaded", function(){
     init();
+    //global click listener
     document.addEventListener("click", (e) => {
         if(e.target.tagName == "BUTTON"){
             updatePage(e.target.dataset.id, e.target.dataset.type);
